@@ -80,7 +80,6 @@ def encrypt_folder(foldername, key):
                 # if it's a folder, encrypt the entire folder by calling this function recursively
                 encrypt_folder(child, key)
         except PermissionError:
-            print(f"[!] Permission denied for {child}, skipping...")
             pass
 
 
@@ -117,7 +116,6 @@ def decrypt_folder(foldername, key):
             elif child.is_dir():
                 decrypt_folder(child, key)
         except PermissionError:
-            print(f"[!] Permission denied for {child}, skipping...")
             pass
 
 
